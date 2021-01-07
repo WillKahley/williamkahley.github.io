@@ -1,4 +1,4 @@
-<html>
+ï»¿<html>
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
@@ -363,7 +363,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     data for each cohort. In this era of big data, tools like Apache Spark have
     provided a user-friendly platform for batch processing large datasets.
     However, in order to use such tools as a sufficient replacement to current
-    bioinformatics pipelines, we need more accessible and comprehensive API’s
+    bioinformatics pipelines, we need more accessible and comprehensive APIâ€™s
     for processing genomic data, as well as support for interactive exploration
     of these processed datasets.<br>
     <br>
@@ -407,12 +407,12 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <pre><code><span style='font-family:"Times New Roman",serif;color:black'>aws emr create-cluster </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--release-label emr-5.19.0 </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>   </span></code></pre><pre><code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â  </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--name </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>'emr-5.19.0 Mango example'</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'> </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>   </span></code></pre><pre><code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â  </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--applications </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>Name=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>Hadoop </span></code><span
@@ -421,7 +421,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     class=token><span style='font-family:"Times New Roman",serif;color:black'>Name=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>Spark </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>   </span></code></pre><pre><code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â  </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--ec2-attributes </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>KeyName=&lt;</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>your-ec2-key</span></code><span
@@ -430,13 +430,13 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     class=token><span style='font-family:"Times New Roman",serif;color:black'>=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>EMR_EC2_DefaultRole </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>   </span></code></pre><pre><code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â  </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--service-role EMR_DefaultRole </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>     </span></code></pre><pre><code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â Â Â  </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--instance-groups </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>     </span></code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â Â Â  </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>InstanceGroupType=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>MASTER,InstanceCount</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>=1</span></span><code><span
@@ -444,7 +444,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     class=token><span style='font-family:"Times New Roman",serif;color:black'>=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>c5.4xlarge </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>     </span></code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â Â Â  </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>InstanceGroupType=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>CORE,InstanceCount</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>=4</span></span><code><span
@@ -452,23 +452,23 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     class=token><span style='font-family:"Times New Roman",serif;color:black'>=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>c5.4xlarge </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>   --region </span></code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â  --region </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>&lt;</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>your-aws-region</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>&gt;</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'> </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>   </span></code></pre><pre><code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â  </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--log-uri s3://</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>&lt;</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>your-s3-bucket</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>&gt;</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>/emr-logs/ </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>   </span></code></pre><pre><code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â  </span></code></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>--bootstrap-actions </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>\</span></span><code><span
-    style='font-family:"Times New Roman",serif;color:black'>     </span></code></pre><pre><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â Â Â  </span></code></pre><pre><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>Name='Install Mango'</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>, </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>Path=&quot;s3://aws-bigdata-blog/artifacts/mango-emr/install-bdg-mango-docker-emr5.sh&quot;</span></span></pre>
@@ -499,27 +499,27 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p style='margin:0in'><b><span style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
     color:black'>Resources on AWS</span></b></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>    Description</span></p>
+    color:black'>Â Â Â  Description</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>        </span><span style='color:black'><a
+    color:black'>Â Â Â Â Â Â Â  </span><span style='color:black'><a
     href="http://www.internationalgenome.org/formats"><span style='font-size:
     9.0pt;font-family:"Segoe UI",sans-serif'>http://www.internationalgenome.org/formats</span></a></span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>    Resource type</span></p>
+    color:black'>Â Â Â  Resource type</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>        S3 Bucket</span></p>
+    color:black'>Â Â Â Â Â Â Â  S3 Bucket</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>    Amazon Resource Name (ARN)</span></p>
+    color:black'>Â Â Â  Amazon Resource Name (ARN)</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>        arn:aws:s3:::1000genomes</span></p>
+    color:black'>Â Â Â Â Â Â Â  arn:aws:s3:::1000genomes</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>    AWS Region</span></p>
+    color:black'>Â Â Â  AWS Region</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>        us-east-1</span></p>
+    color:black'>Â Â Â Â Â Â Â  us-east-1</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>    AWS CLI Access (No AWS account required)</span></p>
+    color:black'>Â Â Â  AWS CLI Access (No AWS account required)</span></p>
     <p style='margin:0in'><span style='font-size:9.0pt;font-family:"Segoe UI",sans-serif;
-    color:black'>        aws s3<br>
+    color:black'>Â Â Â Â Â Â Â  aws s3<br>
     </span><span style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
     color:black'><br>
     </span><span style='font-size:10.0pt;color:black'>In this analysis, we will
@@ -543,7 +543,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     find the Jupyter notebook containing these examples in </span><span
     style='color:black'><a
     href="https://github.com/bigdatagenomics/mango/blob/master/example-files/notebooks/aws-1000genomes.ipynb"
-    target="_blank"><span style='font-size:10.0pt'>Mango’s GitHub repository</span></a></span><span
+    target="_blank"><span style='font-size:10.0pt'>Mangoâ€™s GitHub repository</span></a></span><span
     style='font-size:10.0pt;color:black'>, or at </span><tt><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>/opt/cgl-docker-lib/mango/example-files/notebooks/aws-1000genomes.ipynb</span></tt><span
     style='font-size:10.0pt;color:black'> in the running Docker container for
@@ -638,7 +638,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     class=token><span style='font-family:"Times New Roman",serif;color:black'>)</span></span></pre><pre><code><span
     style='font-family:"Times New Roman",serif'>&nbsp;</span></code></pre><pre><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'># repartition genotypes to balance the load across memory</span></span></pre><pre><code><span
-    style='font-family:"Times New Roman",serif;color:black'>genotypes_df  </span></code><span
+    style='font-family:"Times New Roman",serif;color:black'>genotypes_dfÂ  </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>=</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'> genotypes</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>.</span></span><code><span
@@ -697,7 +697,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     style='font-family:"Times New Roman",serif;color:black'>withColumn</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>('ReferenceRegion',</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'> </span></code></pre><pre><code><span
-    style='font-family:"Times New Roman",serif;color:black'>                    sf</span></code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â sf</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>.</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>concat</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>(</span></span><code><span
@@ -725,7 +725,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     can query your dataset to find de novo variants. But first, you must
     register your dataframe with Spark SQL.</span></p>
     <pre><span class=token><span style='font-family:"Times New Roman",serif;
-    color:black'>#  Register df with Spark SQL</span></span></pre><pre><code><span
+    color:black'>#Â  Register df with Spark SQL</span></span></pre><pre><code><span
     style='font-family:"Times New Roman",serif;color:black'>trios_with_referenceRegion</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>.</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>createOrReplaceTempView</span></code><span
@@ -747,7 +747,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     style='font-family:"Times New Roman",serif;color:black'>names</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>[0]</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'> AS snp FROM trios \</span></code></pre><pre><code><span
-    style='font-family:"Times New Roman",serif;color:black'>                                    WHERE array_contains</span></code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  WHERE array_contains</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>(</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>alleles</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>,</span></span><code><span
@@ -799,7 +799,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     style='font-family:"Times New Roman",serif;color:black'> </span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>'NA19660'</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'> \</span></code></pre><pre><code><span
-    style='font-family:"Times New Roman",serif;color:black'>            AND !array_contains</span></code><span
+    style='font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â Â Â Â Â  AND !array_contains</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>(</span></span><code><span
     style='font-family:"Times New Roman",serif;color:black'>alleles</span></code><span
     class=token><span style='font-family:"Times New Roman",serif;color:black'>,</span></span><code><span
@@ -1353,13 +1353,13 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
           href="https://aws-bigdata-blog.s3.amazonaws.com/artifacts/aws-blog-runnable-notebook/demo/notebook/demo_pyspark.ipynb"
           target="_blank"><span style='font-size:10.0pt;font-family:"Times New Roman",serif'>demo_pyspark.pynb</span></a></span><span
           style='font-size:10.0pt;font-family:"Times New Roman",serif;
-          color:black'> – Used for both use cases in this post.</span></li>
+          color:black'> â€“ Used for both use cases in this post.</span></li>
       <li class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
           style='color:black'><a
           href="https://aws-bigdata-blog.s3.amazonaws.com/artifacts/aws-blog-runnable-notebook/demo/notebook/trailing_N_day.ipynb"><span
           style='font-size:10.0pt;font-family:"Times New Roman",serif'>trailing_N
           day.ipynb</span></a></span><span style='font-size:10.0pt;font-family:
-          "Times New Roman",serif;color:black'> – Used for the second use case.</span></li>
+          "Times New Roman",serif;color:black'> â€“ Used for the second use case.</span></li>
      </ul>
     </ul>
     <p style='margin:0in'><span style='font-size:10.0pt;color:black'>Record the
@@ -1448,7 +1448,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     datasets, whether they are in a raw text format (CSV/JSON) or specialized
     formats (e.g. Parquet). By being able to flexibly query different types of
     data sources, researchers can more rapidly progress through the data
-    exploration phase for discovery. Additionally, researchers don’t have to
+    exploration phase for discovery. Additionally, researchers donâ€™t have to
     know nuances of managing and running a big data system. This makes Athena
     an excellent complement to data warehousing on </span><span
     style='color:black'><a href="https://aws.amazon.com/redshift/"
@@ -1502,7 +1502,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     </ul>
     <p style='margin:0in'><span style='font-size:10.0pt;color:black'>All these
     questions, and more, can be generalized under a common query pattern I like
-    to call “Select, Aggregate, Annotate”. Some of our genomics customers, such
+    to call â€œSelect, Aggregate, Annotateâ€. Some of our genomics customers, such
     as Human Longevity, Inc., routinely use this query pattern </span><span
     style='color:black'><a href="https://www.youtube.com/watch?v=CGbWEkszAlQ"
     target="_blank"><span style='font-size:10.0pt'>in their work</span></a></span><span
@@ -1627,19 +1627,19 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Setting up your AWS account (if you do not already have one)</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Package a set of bioinformatics applications using Docker</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Create a AWS Batch environment for analysis</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Define and deploy AWS Step Functions to control the data processing steps</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Initiate a workflow</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
@@ -1675,8 +1675,8 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     border-top:none;padding:0in 5.4pt 0in 5.4pt'>
     <p style='margin:0in'><span style='color:black'>AWS offers a broad range of
     instances that are advantageous for batch workloads. The scale and
-    provisioning speed of AWS’ compute instances allow you to get up and
-    running at peak capacity in minutes without paying for downtime. Today, I’m
+    provisioning speed of AWSâ€™ compute instances allow you to get up and
+    running at peak capacity in minutes without paying for downtime. Today, Iâ€™m
     pleased to introduce allocation strategies: a significant new capability in
     <a
     href="https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html">AWS
@@ -1690,9 +1690,9 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p style='margin:0in'><span style='color:black'>AWS Batch is a fully
     managed, cloud-native batch scheduler. It manages the queuing and
     scheduling of your batch jobs, and the resources required to run your jobs.
-    One of AWS Batch’s great strengths is the ability to manage instance
+    One of AWS Batchâ€™s great strengths is the ability to manage instance
     provisioning as your workload requirements and budget needs change. AWS
-    Batch takes advantage of AWS’s broad base of compute types. For example,
+    Batch takes advantage of AWSâ€™s broad base of compute types. For example,
     you can launch compute based instances and memory instances that can handle
     different workload types, without having to worry about building a cluster
     to meet peak demand.</span></p>
@@ -1703,7 +1703,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     added allocation strategies provide flexibility. They allow AWS Batch to
     consider capacity and throughput in addition to cost when provisioning your
     instances. This allows you to leverage different priorities when launching
-    instances depending on your workloads’ needs, such as: controlling cost,
+    instances depending on your workloadsâ€™ needs, such as: controlling cost,
     maximizing throughput, or minimizing <a
     href="https://aws.amazon.com/ec2/spot/">Amazon EC2 Spot</a> instances
     interruption rates.</span></p>
@@ -1784,19 +1784,19 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     href="https://conda.io/en/latest/index.html">conda</a> package manager
     specializing in bioinformatics software. Bioconda consists of:</span></p>
     <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:
-    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
     style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </span></span><span style='color:black'>a <a
     href="https://github.com/bioconda/bioconda-recipes">repository of recipes</a>
     hosted on GitHub</span></p>
     <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:
-    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
     style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </span></span><span style='color:black'>a <a
     href="https://github.com/bioconda/bioconda-utils">build system</a> turning
     these recipes into conda packages</span></p>
     <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:
-    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
     style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </span></span><span style='color:black'>a <a
     href="https://anaconda.org/bioconda/">repository of packages</a> containing
@@ -1805,7 +1805,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     style='font-size:10.0pt;color:black'> </span></code><span class=pre><span
     style='font-size:10.0pt;font-family:"Courier New";color:black'>install</span></span></p>
     <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:
-    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+    .5in;text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
     style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </span></span><span style='color:black'>over 850 contributors and 570
     members who add, modify, update and maintain the recipes</span></p>
@@ -1959,7 +1959,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
     3.0pt;margin-left:0in;line-height:normal'><b><span style='font-size:10.0pt;
     font-family:"Times New Roman",serif;color:black'>Data Science (Python):
-    Project Repositories  </span></b></p>
+    Project RepositoriesÂ  </span></b></p>
     </td>
    </tr>
    <tr>
@@ -1997,9 +1997,9 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <td width=730 valign=top style='width:7.6in;border:solid windowtext 1.0pt;
     border-top:none;padding:0in 5.4pt 0in 5.4pt'>
     <p><span style='color:black'>AWS offers a broad range of instances that are
-    advantageous for batch workloads. The scale and provisioning speed of AWS’
+    advantageous for batch workloads. The scale and provisioning speed of AWSâ€™
     compute instances allow you to get up and running at peak capacity in
-    minutes without paying for downtime. Today, I’m pleased to introduce
+    minutes without paying for downtime. Today, Iâ€™m pleased to introduce
     allocation strategies: a significant new capability in <a
     href="https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html">AWS
     Batch</a> that &nbsp;makes provisioning compute resources flexible and
@@ -2011,9 +2011,9 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p><strong><span style='color:black'>Overview</span></strong></p>
     <p><span style='color:black'>AWS Batch is a fully managed, cloud-native
     batch scheduler. It manages the queuing and scheduling of your batch jobs,
-    and the resources required to run your jobs. One of AWS Batch’s great
+    and the resources required to run your jobs. One of AWS Batchâ€™s great
     strengths is the ability to manage instance provisioning as your workload
-    requirements and budget needs change. AWS Batch takes advantage of AWS’s
+    requirements and budget needs change. AWS Batch takes advantage of AWSâ€™s
     broad base of compute types. For example, you can launch compute based
     instances and memory instances that can handle different workload types,
     without having to worry about building a cluster to meet peak demand.</span></p>
@@ -2024,7 +2024,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     strategies provide flexibility. They allow AWS Batch to consider capacity
     and throughput in addition to cost when provisioning your instances. This
     allows you to leverage different priorities when launching instances
-    depending on your workloads’ needs, such as: controlling cost, maximizing
+    depending on your workloadsâ€™ needs, such as: controlling cost, maximizing
     throughput, or minimizing <a href="https://aws.amazon.com/ec2/spot/">Amazon
     EC2 Spot</a> instances interruption rates.</span></p>
     <p><span style='color:black'>There are now three instance allocation
@@ -2074,12 +2074,13 @@ style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
   bridge between the gene expression omnibus (GEO) and bioconductor</span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><em><span
   style='font-size:10.0pt'>Bioinformatics</span></em><span style='font-size:
-  10.0pt;font-family:"Times New Roman",serif'>, <b>14</b>, 1846–1847.<br>
-  <a
-  href="https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html">https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html</a></span></p>
-  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='font-size:10.0pt;font-family:"Times New Roman",serif'><a
-  href="https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html#platforms">https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html#platforms</a></span></p>
+  10.0pt;font-family:"Times New Roman",serif'>, <b>14</b>, 1846â€“1847.<br>
+  </span><a
+  href="https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html"><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://www.bioconductor.org/packages/release/bioc/html/GEOquery.html</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
+  href="https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html#platforms"><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://www.bioconductor.org/packages/release/bioc/vignettes/GEOquery/inst/doc/GEOquery.html#platforms</span></a></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
   </td>
@@ -2098,11 +2099,11 @@ style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
   <td width=763 valign=top style='width:7.95in;border:solid windowtext 1.0pt;
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-  style='font-size:10.0pt;font-family:"Times New Roman",serif'>Collection of Bioinformatics
-  Tools</span></b></p>
-  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-  style='font-size:10.0pt;font-family:"Times New Roman",serif'><a
-  href="https://github.com/jdidion/biotools/blob/main/README.md">https://github.com/jdidion/biotools/blob/main/README.md</a></span></p>
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>Collection of
+  Bioinformatics Tools</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
+  href="https://github.com/jdidion/biotools/blob/main/README.md"><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://github.com/jdidion/biotools/blob/main/README.md</span></a></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif;background:yellow'>Excellent</span></b><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'> </span></b></p>
@@ -2126,9 +2127,9 @@ style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
 style='font-size:10.0pt;font-family:"Times New Roman",serif'>Mastering RNA-Seq
 (NGS Data Analysis) - A Critical Approach to Transcriptomic Data Analysis</span></b></p>
 
-<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:10.0pt;font-family:"Times New Roman",serif'><a
-href="https://www.youtube.com/watch?v=j4qpJ8sVjT0">https://www.youtube.com/watch?v=j4qpJ8sVjT0</a></span></p>
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
+href="https://www.youtube.com/watch?v=j4qpJ8sVjT0"><span style='font-size:10.0pt;
+font-family:"Times New Roman",serif'>https://www.youtube.com/watch?v=j4qpJ8sVjT0</span></a></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
 style='font-size:10.0pt;font-family:"Times New Roman",serif'>Video 03:18:55</span></p>
@@ -2163,16 +2164,16 @@ Next Generation Sequencing (NGS) data</span></p>
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://journals.plos.org/ploscompbiol/search</span></b></a></span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>All
-  Fields:                 bioconductor  </span></b></p>
+  Fields: Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  bioconductorÂ  </span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Publication
-  Date:     2016-01-01 - 2020-10-09   </span></b></p>
+  Date: Â Â Â  2016-01-01 - 2020-10-09Â Â  </span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Sort
-  By:                     Most Bookmarked</span></b></p>
+  By: Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  Most Bookmarked</span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Subject
-  Area:           <span style='background:yellow'>Principal component analysis</span></span></b></p>
+  Area: Â Â Â Â Â Â Â Â Â  <span style='background:yellow'>Principal component analysis</span></span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>&gt;&gt;
   results</span></p>
@@ -2318,8 +2319,8 @@ analysis </span></p>
 style='font-size:10.0pt;font-family:"Times New Roman",serif'>data normalization</span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-style='font-size:10.0pt;font-family:"Times New Roman",serif'>batch-corrected RNA-seq
-</span></p>
+style='font-size:10.0pt;font-family:"Times New Roman",serif'>batch-corrected
+RNA-seq </span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>&nbsp;</p>
 
@@ -2367,7 +2368,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='color:black'><br>
   </span><b><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
-  color:black'> Relevant journal publications </span></b></p>
+  color:black'>Â Relevant journal publications </span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
   <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
@@ -2440,9 +2441,9 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     font-family:"Times New Roman",serif;color:black'>Curr Protoc Mol Biol. 2018
     Oct</span></p>
     <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
-    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
-    font-family:"Times New Roman",serif;color:black'><a
-    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6168365/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6168365/</a></span></p>
+    0in;margin-left:0in;line-height:normal'><span style='color:black'><a
+    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6168365/"><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6168365/</span></a></span></p>
     <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
     0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
     font-family:"Times New Roman",serif'>&nbsp;</span></p>
@@ -2470,94 +2471,94 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     Alignment/Mapping:</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     the sequence of each read to a reference genome, annotation of genes </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     - <b>STAR</b> alignment tool </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     Quality Assessment:</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     After mapping reads to the genome, it is important to survey the quality of
     the RNA-seq data</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     - <b>Picard</b> </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     - <b>SAMTools</b> </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     Quantification of Mapped Reads:</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     - <b>HTseq</b> to quantify sequencing reads mapped to each gene</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>       
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â 
     (a) identify genes that are differentially expressed between conditions
     (sample groups), </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>       
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â 
     (b) derive gene expression values for each individual transcript</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>       
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â 
     Approaches for normalization include </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>       
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â 
     CPM (counts per million reads), </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>       
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â 
     RPKM (reads per kilobase per million reads), </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>       
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â 
     FPKM (fragments per kilobase per million reads), </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>       
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â Â Â Â 
     TPM (transcripts per million reads).</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     Differential Gene Expression Analysis:</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     <b>EdgeR</b> (Robinson et al., 2010) </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>    
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â Â 
     <b>DESeq2</b> (Love et al. 2014)</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><br>
     Download and install required tools:</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     STAR: </span><span style='color:black'><a
     href="https://github.com/alexdobin/STAR"><span style='font-size:10.0pt;
     font-family:"Times New Roman",serif'>https://github.com/alexdobin/STAR</span></a></span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Picard: </span><span style='color:black'><a
     href="https://broadinstitute.github.io/picard/"><span style='font-size:
     10.0pt;font-family:"Times New Roman",serif'>https://broadinstitute.github.io/picard/</span></a></span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     HTseq: </span><span style='color:black'><a
     href="https://htseq.readthedocs.io/en/release_0.9.1/install.html"><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://htseq.readthedocs.io/en/release_0.9.1/install.html</span></a></span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     R: </span><span style='color:black'><a href="https://www.r-project.org"><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://www.r-project.org</span></a></span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
@@ -2615,7 +2616,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     an R/Bioconductor package for interacting with RNA-seq principal components</span></b></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>BMC
-    Bioinformatics 2019 volume 20, Article number: 331  </span></p>
+    Bioinformatics 2019 volume 20, Article number: 331Â  </span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>17
     Citations</span></p>
@@ -2689,7 +2690,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt'>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>A
-    Beginner’s Guide to Analysis of RNA Sequencing Data</span></b></p>
+    Beginnerâ€™s Guide to Analysis of RNA Sequencing Data</span></b></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='color:black'><a
     href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6096346/"><span
@@ -2713,7 +2714,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     general understanding of the principles underlying each step of RNA-seq
     data analysis allows investigators without a background in programming and
     bioinformatics to critically analyze their own datasets as well as
-    published data.  Our goals in the present review are to break down the
+    published data.Â  Our goals in the present review are to break down the
     steps of a typical RNA-seq analysis and to highlight the pitfalls and
     checkpoints along the way that are vital for bench scientists and
     biomedical researchers performing experiments that use RNA-seq.</span></p>
@@ -2732,7 +2733,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     Data:</span></b></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>The
-    RNA-seq data reported in this article has been deposited in NCBI’s Gene
+    RNA-seq data reported in this article has been deposited in NCBIâ€™s Gene
     Expression Omnibus (GEO) and are accessible through GEO Series accession
     number GSE116583.</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
@@ -2773,23 +2774,23 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     two most common clustering methods used for RNA-seq data analysis are
     hierarchical and k-means clustering (see Clustering box). The most common
     form of hierarchical clustering is a bottom-up agglomerative approach that
-    organizes the data into a tree structure without user input by starting
-    with each data point as its own cluster and iteratively combining them into
-    larger clusters or “clades.” In contrast, k-means clustering requires the
+    organizes the data into a tree structure without user input by starting with
+    each data point as its own cluster and iteratively combining them into
+    larger clusters or â€œclades.â€ In contrast, k-means clustering requires the
     investigator to define the number of clusters (k) a priori, and data are
     then sorted into the cluster with the nearest mean. It is possible to
     assess a range of k-values to decide how to best capture the trends. In
     addition, various tools such as Silhouette exist to help the investigator
-    determine the ideal k-value, but some subjectivity remains (21). By
-    adjusting the k, the investigator may set the degree of granularity they
-    would like to achieve with the data. For either approach, the user must
-    specify the distance metric by which data points are considered similar.
-    Typically, Pearson’s correlation is used, and this is generally the default
-    in software designed for RNA-seq analysis. Both approaches are widely used,
+    determine the ideal k-value, but some subjectivity remains (21). By adjusting
+    the k, the investigator may set the degree of granularity they would like
+    to achieve with the data. For either approach, the user must specify the
+    distance metric by which data points are considered similar. Typically,
+    Pearsonâ€™s correlation is used, and this is generally the default in
+    software designed for RNA-seq analysis. Both approaches are widely used,
     and both aid the investigator in identifying groups of genes that display
-    similar expression patterns, allowing for further downstream analyses. The
-    clusters can then be used as input for an analysis of functional enrichment
-    (see next section).</span></p>
+    similar expression patterns, allowing for further downstream analyses. The clusters
+    can then be used as input for an analysis of functional enrichment (see
+    next section).</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
@@ -2811,9 +2812,10 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     clustering</span></b></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>The
-    most commonly used hierarchical clustering approach is a form of agglomerative,
-    or bottom-up, clustering that iteratively merges clusters (originally
-    consisting of individual data points) into larger clusters or “clades”.</span></p>
+    most commonly used hierarchical clustering approach is a form of
+    agglomerative, or bottom-up, clustering that iteratively merges clusters
+    (originally consisting of individual data points) into larger clusters or
+    â€œcladesâ€.</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
@@ -2821,8 +2823,9 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     clustering</span></b></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Data
-    points are iteratively partitioned into clusters based on the minimum distance
-    to the cluster mean. The number of clusters (k) is set by the investigator.</span></p>
+    points are iteratively partitioned into clusters based on the minimum
+    distance to the cluster mean. The number of clusters (k) is set by the
+    investigator.</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><br>
     <br>
@@ -2938,25 +2941,25 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     <td width=758 valign=top style='width:7.9in;border:solid windowtext 1.0pt;
     border-top:none;padding:0in 5.4pt 0in 5.4pt'>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Install and load packages</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Mapping reads to a reference genome</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Count reads for each feature</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     QC and stats</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Differential Expression</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Gene Annotation</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
-    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Â Â Â 
     Gene Set Enrichment</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
@@ -3090,19 +3093,19 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>http://master.bioco
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='color:black'>Omics Playground is a comprehensive self-service
     platform platform for visualization, analytics and exploration of Big Omics
-    Data.  It allows users to apply a multitude of state-of-the-art analysis
+    Data. Â It allows users to apply a multitude of state-of-the-art analysis
     tools to their own data to explore and discover underlying biology in a
     short time.</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='color:black'><br>
     The platform offers a unique combination of features that distinguishes it
-    from the other analytics platforms currently available.  We believe that
+    from the other analytics platforms currently available. Â We believe that
     data preprocessing (primary analysis) and statistical testing (secondary
-    analysis) are now well established, and the most challenging task is
-    currently data interpretation (tertiary analysis) that often takes the
-    longest time but where actual insights can be gained. Therefore, Omics
-    Playground focuses strongly on tertiary analysis while providing good
-    support for secondary analysis.</span></p>
+    analysis) are now well established, and the most challenging task is currently
+    data interpretation (tertiary analysis) that often takes the longest time
+    but where actual insights can be gained. Therefore, Omics Playground
+    focuses strongly on tertiary analysis while providing good support for
+    secondary analysis.</span></p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>&nbsp;</p>
     <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
     style='color:black'>Reanalyzing Public Datasets</span></p>
@@ -3286,7 +3289,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>NCBI Reference
-  Sequence Databas<span style='color:black'>e      (RefSeq) </span></span></b></p>
+  Sequence Database <span style='color:black'>Â Â Â Â Â (RefSeq) </span></span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='color:black'><a href="https://www.ncbi.nlm.nih.gov/refseq/"><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>https://www.ncbi.nlm.nih.gov/refseq/</span></a></span></p>
@@ -3351,7 +3354,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>Comparative
   analysis of differential gene expression analysis tools for single-cell RNA
-  sequencing data   </span></b><span style='font-size:10.0pt;font-family:"Times New Roman",serif'>2019</span></p>
+  sequencing dataÂ Â  </span></b><span style='font-size:10.0pt;font-family:"Times New Roman",serif'>2019</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
   href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6"><span
   style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6</span></a></p>
@@ -3383,9 +3386,9 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-  style='font-size:10.0pt;font-family:"Times New Roman",serif'>FASTQC   A
-  quality control tool for high throughput sequence data</span></b><span
-  style='font-size:10.0pt;font-family:"Times New Roman",serif'>.    2014
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>FASTQCÂ Â  A quality
+  control tool for high throughput sequence data</span></b><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>.Â Â Â  2014
   September 29 <br>
   </span><a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"><span
   style='font-size:8.0pt;font-family:"Times New Roman",serif'>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</span></a></p>
@@ -3393,7 +3396,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>Free RNA-seq
-  Analysis Tools – Software and Resources</span></b></p>
+  Analysis Tools â€“ Software and Resources</span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
   href="https://bioinformaticshome.com/tools/rna-seq/rna-seq.html"><span
   style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://bioinformaticshome.com/tools/rna-seq/rna-seq.html</span></a></p>
@@ -3443,7 +3446,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>Comparative
   analysis of differential gene expression analysis tools for single-cell RNA
-  sequencing data   </span></b><span style='font-size:10.0pt;font-family:"Times New Roman",serif'>2019</span></p>
+  sequencing dataÂ Â  </span></b><span style='font-size:10.0pt;font-family:"Times New Roman",serif'>2019</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
   href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6"><span
   style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2599-6</span></a></p>
@@ -3475,9 +3478,9 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
-  style='font-size:10.0pt;font-family:"Times New Roman",serif'>FASTQC   A
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>FASTQCÂ Â  A
   quality control tool for high throughput sequence data</span></b><span
-  style='font-size:10.0pt;font-family:"Times New Roman",serif'>.    2014
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>.Â Â Â  2014
   September 29 <br>
   </span><a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"><span
   style='font-size:8.0pt;font-family:"Times New Roman",serif'>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</span></a></p>
@@ -3485,7 +3488,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>Free RNA-seq
-  Analysis Tools – Software and Resources</span></b></p>
+  Analysis Tools â€“ Software and Resources</span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
   href="https://bioinformaticshome.com/tools/rna-seq/rna-seq.html"><span
   style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://bioinformaticshome.com/tools/rna-seq/rna-seq.html</span></a></p>
@@ -3647,7 +3650,7 @@ style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>Accurate and
-  Fast feature selection workflow for high-dimensional omics data   June 2017</span></b></p>
+  Fast feature selection workflow for high-dimensional omics dataÂ Â  June 2017</span></b></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><a
   href="https://www.biorxiv.org/content/10.1101/144162v1.full"><span
   style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://www.biorxiv.org/content/10.1101/144162v1.full</span></a></p>
@@ -3723,7 +3726,7 @@ line-height:107%;font-family:"Times New Roman",serif'>&nbsp;</span></a></p>
   dimensional reduction</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>Determine the
-  ‘dimensionality’ of the dataset</span></p>
+  â€˜dimensionalityâ€™ of the dataset</span></p>
   <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
   style='font-size:10.0pt;font-family:"Times New Roman",serif'>Cluster the
   cells</span></p>
@@ -4030,27 +4033,27 @@ several advantages:<br>
 </span></p>
 
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
-text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:10.0pt'>R markdown syntax is already
 familiar to any developer of a Bioconductor package, since it is the standard
-approach to creating the package “vignette” or prose documentation.</span></p>
+approach to creating the package â€œvignetteâ€ or prose documentation.</span></p>
 
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
-text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:10.0pt'>R markdown implements “literate
-programming” by including formatted text, runnable code, and output of the code</span></p>
+</span></span><span style='font-size:10.0pt'>R markdown implements â€œliterate
+programmingâ€ by including formatted text, runnable code, and output of the code</span></p>
 
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
-text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:10.0pt'>Bookdown allows collating chapters
 as a clean, lightweight online book format, and pandoc additionally allows
 creation of PDF and ePub formats</span></p>
 
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in;
-text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+text-indent:-.25in'><span style='font-size:10.0pt;font-family:Symbol'>Â·<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span style='font-size:10.0pt'>These formats can then be
 self-published with options to order paper copies through companies such as </span><a
