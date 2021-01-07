@@ -1,0 +1,158 @@
+# Training
+
+## Online Learning:
+	Amazon Web Services  
+	• AWS Technical Professional													2020/04
+		https://www.aws.training/Details/Curriculum?id=45423
+	Skillport 
+	• Python for Data Science: Introduction to Pandas								2020/05
+	• Data Science Statistics: Applied Inferential Statistics						2020/05 
+	Udemy 
+	• Machine Learning A-Z: Hands-On Python & R in Data Science   44 hour			2020/07,08
+		https://www.udemy.com/course/machinelearning/
+
+## Desktop Computing Environment: Windows Python, R									2020/07,08
+	Python (Anaconda)
+	Data manipulation, analysis, modeling, visualization; with JupyterLab IDE, Jupyter Notebooks.
+	• Python scripting
+	• Python Libraries: NumPy, SciPy, Pandas, SciKit-Learn, StatsModels, MatPlotLib
+	• Spyder, PyCharm
+	• JupyterLab, Jupyter Notebooks
+	R (Bioconductor)																2020/09,10
+	Initial learning experience on Windows, with efforts continuing on AWS Cloud. 			 
+	• R scripting
+	• R Packages: Tidyverse
+	• RStudio 
+	• Access/Download from Open Genomic Data repositories
+
+## Amazon Web Services (AWS) Environment: Linux R 									2020/12
+	AWS Services Identified, Explored, Studied:
+	• EC2 AMIs: 
+		- AMIs (Image Instance Types, Configuring Security Groups, Key Pairs, IAM Roles).
+		- EBS-backed AMIs (Snapshots/incremental backups of EBS volumes, Root Device volume).
+		- Data Storage (Create S3 Bucket, Import from Amazon Open Data S3 Buckets, Input data to Dev environment, Storing output data in S3 Bucket). 
+		- High-Performance (Placement Group, Increased Network Bandwidth, Cluster Computing)
+		- Spot Instances 
+		- Shared AMIs 
+		- AWS Batch
+	• EC2 Image Builder: Service enables custom image builds
+	• EC2 Container Service (ECS): Service supports Docker containers
+	• Elastic Container Registry (ECR): Docker container registry service
+
+## AWS AMI Bookmark (Kahley AMI)													2020/12 
+	https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0abcdef1234567890
+	Bioconductor Community maintained Public AMI image (R Packages, RStudio Server, Git, …) 
+	Provisioning of AWS computing resources enabled:
+		- RStudio (Local PC Web Browser) <== HTTP ==> RStudio Server (EC2 AMI)
+		- Bioinformatics workflows using Bioconductor Packages in RStudio. 
+
+## Bioinformatics Online Study Resources:										
+	Familiarity of																	2020/09
+		[Concepts, Terminology of Molecular Biology, Genetics] (https://william-p-kahley.github.io/williamkahley.github.io/William.P.Kahley.CovLet.111120.htm)
+		Genomic Sequencing Technologies 
+	Knowledge of																	2020/09,10,11 
+		Data Analysis, Modeling, Visualization (Algorithms)
+		Data Analysis, Modeling, Visualization (Python, JupyterLab, Jupyter Notebooks)
+		Data Analysis, Modeling, Visualization (R, RStudio)
+		Data Analysis, Modeling, Visualization (Bioconductor)
+		Data Analysis, Modeling, Visualization (Software Tools Overview) 
+		Data Resources, Viewers 
+	Special study of																2020/09,10,11 
+		NGS RNA-Seq: Related data files formats, pre-processing (FASTQ BAM VCF)
+		NGS RNA-Seq: Expression Analysis, Differential Expression Analysis 
+		NGS RNA-Seq: data integration, normalization, batch-corrected, cross-study analysis, data mining
+	Bioinformatics Projects															2020/09,10,11,12
+		Project Ideas
+		Project 1
+		Project 2
+	AWS Documentation																2020/12
+	AWS Bioinformatics																2020/11,12
+	Open Access Journals															2020/07,08,09,10,11,12
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\CoverLetter.122120.docx
+
+
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[K1] Data Analysis, Modeling, Visualization (Algorithms).HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[K2] Data Analysis, Modeling, Visualization (Python, JupyterLab, Notebooks).HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[K3] Data Analysis, Modeling, Visualization (R, RStudio).HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[K4] Data Analysis, Modeling, Visualization (Bioconductor).HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[K5] Data Analysis, Modeling, Visualization (Software Tools Overview).HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[K6] Data Resources, Viewers.HYML.docx
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\Open Access Journals.HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\AWS Documentation.docx
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\AWS Bioinformatics.docx
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\Amazon Web Services.HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[P0] Project Ideas.HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[F1] ConceptsTerminology of Molecular Biology, Genetics.HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[F2] Genomic Sequencing Technologies.HTML
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\[S0] Study Notes.docx
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\
+
+C:\00.WorkspacesBioInfo\williamkahley.github.io\Pages\Amazon Web Services.Resume.docx
+
+
+
+C:\Users\Cedric\Documents\00 Data Science\11 Bioinformatics\Projects\BioInformatics Project Ideas.docx
+
+C:\Users\Cedric\Documents\00 Data Science\11 Bioinformatics\Projects\AWS EC2 AMI.(RStudio, Projects, Create AMI Images).120720.docx
+
+C:\Users\Cedric\Documents\00 Data Science\11 Bioinformatics\Projects\AWS.(ECS, Docker, ...).docx
+
+C:\Users\Cedric\Documents\00 Data Science\11 Bioinformatics\Projects\AWS EC2 AMI.(EC2 Image Builder).122320.docx
+
+C:\Users\Cedric\Documents\00 Data Science\11 Bioinformatics\Projects\AWS EC2 AMI.(Create, Configure).120420.docx
+
+C:\Users\Cedric\Documents\00 Data Science\11 Bioinformatics\Projects\
+
+C:\Users\Cedric\Documents\00 Data Science\Project Examples\Public Project Examples.doc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
