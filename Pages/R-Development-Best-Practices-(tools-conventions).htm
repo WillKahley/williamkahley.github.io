@@ -1,0 +1,439 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:.3in .3in .3in .5in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>R Development Best
+Practices (Tools, Conventions)</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='background:#FFFAEB;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=768 valign=top style='width:8.0in;border:solid windowtext 1.0pt;
+  background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=768 valign=top style='width:8.0in;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+   style='background:white;border-collapse:collapse;border:none'>
+   <tr>
+    <td width=758 valign=top style='width:7.9in;border:solid windowtext 1.0pt;
+    background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-family:"Times New Roman",serif;color:black'>R Development Best
+    Practices</span></b></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=758 valign=top style='width:7.9in;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><br>
+    R packages </span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>by
+    Hadley Wickham and Jenny Bryan. </span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Packages
+    are the fundamental units of reproducible R code. </span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>They
+    include reusable R functions, the documentation that describes how to use
+    them, and sample data. </span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://r-pkgs.org/index.html">https://r-pkgs.org/index.html</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>R
+    Coding Style Guide</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>R-bloggers</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://www.r-bloggers.com/2019/01/%F0%9F%96%8A-r-coding-style-guide/">https://www.r-bloggers.com/2019/01/%F0%9F%96%8A-r-coding-style-guide/</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>The
+    tidyverse style guide</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://style.tidyverse.org/">https://style.tidyverse.org/</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://style.tidyverse.org/_main.pdf">https://style.tidyverse.org/_main.pdf</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=758 valign=top style='width:7.9in;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><b><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>Tidyverse:<br>
+    </span></b><span style='font-size:8.0pt;font-family:"Times New Roman",serif;
+    color:black'><a href="https://www.tidyverse.org/">https://www.tidyverse.org<span
+    style='font-size:10.0pt'>/</span></a></span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>- dplyr </span><span
+    style='color:black'><a href="https://dplyr.tidyverse.org/"><span
+    style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://dplyr.tidyverse.org/</span></a></span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>- tidyr  </span><span
+    style='color:black'><a href="https://tidyr.tidyverse.org/"><span
+    style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://tidyr.tidyverse.org/</span></a></span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>- tibble </span><span
+    style='color:black'><a href="https://tibble.tidyverse.org/"><span
+    style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://tibble.tidyverse.org/</span></a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif;color:black'>Install
+    and load the set of R packages using function </span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif;color:black'>      install.packages(&quot;tidyverse&quot;)<br>
+    <br>
+    </span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif;color:black'>Load
+    the tidyverse package using </span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif;color:black'>      library(tidyverse),
+    there are six core R packages that load:</span></b></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>            readr, for
+    data import.</span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>            tidyr, for
+    data tidying.</span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>            dplyr, for
+    data wrangling.</span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>            ggplot2, for
+    data visualisation.</span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>            purrr, for
+    functional programming.</span></p>
+    <p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:
+    0in;margin-left:0in;line-height:normal'><span style='font-size:10.0pt;
+    font-family:"Times New Roman",serif;color:black'>            tibble, for
+    tibbles, a modern re-imagining of data frames.</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif;color:black'>Introduction
+    to dplyr</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='color:black'><a
+    href="https://dplyr.tidyverse.org/articles/dplyr.html"><span
+    style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://dplyr.tidyverse.org/articles/dplyr.html</span></a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:9.0pt;font-family:"Times New Roman",serif;color:black'>Data
+    Transformation with dplyr: Cheat Sheet</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='color:black'><a
+    href="https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf"><span
+    style='font-size:8.0pt;font-family:"Times New Roman",serif'>https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf</span></a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><br>
+    <br>
+    </span></b></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+   style='background:white;border-collapse:collapse;border:none'>
+   <tr>
+    <td width=758 valign=top style='width:7.9in;border:solid windowtext 1.0pt;
+    background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-family:"Times New Roman",serif;color:black'>R Development Best
+    Practices: Scientific Community Projects </span></b></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=758 valign=top style='width:7.9in;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><br>
+    </span></b><b><span style='font-family:"Times New Roman",serif;color:black'>R
+    Projects to Learn From</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>rOpenSci
+    Packages: Development, Maintenance, and Peer Review</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://devguide.ropensci.org/">https://devguide.ropensci.org/</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>rOpenSci
+    Packages: Development, Maintenance</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://devguide.ropensci.org/">https://devguide.ropensci.org/</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>  <b>1
+    Packaging Guide </b></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    <a href="https://devguide.ropensci.org/building.html">https://devguide.ropensci.org/building.html</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>  <b>2
+    Continuous Integration Best Practices </b></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>   
+    <a href="https://devguide.ropensci.org/ci.html">https://devguide.ropensci.org/ci.html</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>rOpenSci
+    Statistical Software Peer Review</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>2021-03-12</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://ropenscilabs.github.io/statistical-software-review-book">https://ropenscilabs.github.io/statistical-software-review-book</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Github
+    Actions with R</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://ropenscilabs.github.io/actions_sandbox/">https://ropenscilabs.github.io/actions_sandbox/</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Github
+    Actions with R Examples</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://github.com/r-lib/actions/tree/master/examples">https://github.com/r-lib/actions/tree/master/examples</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>useR
+    2017</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://r-pkgs.org/release.html#ref-silge-nash-graves">https://r-pkgs.org/release.html#ref-silge-nash-graves</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Earth
+    Data Science / Earth analytics / Time series data / Write Clean Code</span></b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'> <br>
+    Expressive or Literate Programming in R - Data Science for Scientists 101</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://www.earthdatascience.org/courses/earth-analytics/time-series-data/write-clean-code-with-r/">https://www.earthdatascience.org/courses/earth-analytics/time-series-data/write-clean-code-with-r/</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=758 valign=top style='width:7.9in;border:solid windowtext 1.0pt;
+    border-top:none;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-family:"Times New Roman",serif;color:black'>Gottardo Lab </span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Software
+    &amp; Tools</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'><a
+    href="https://research.fredhutch.org/gottardo/en/software-tools.html">https://research.fredhutch.org/gottardo/en/software-tools.html</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>R
+    Packages</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>Cytoverse</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>The
+    Cytoverse is a collection of R packages facilitating all core aspects of
+    cytometry data analysis, including compensation, transformation, manual and
+    automated gating analysis, and visualization. All of these operations are
+    designed for optimal high-throughput efficiency and to scale well for very
+    large datasets stored locally or in the cloud. <br>
+    <a href="https://cytoverse.org/">https://cytoverse.org/</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>OpenCyto</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>An
+    R package that providing an automated data analysis pipeline for flow
+    cytometry.<br>
+    <a href="https://github.com/RGLab/openCyto">https://github.com/RGLab/openCyto</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>DataPackageR</span></b></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>DataPackageR
+    aims to simplify data package construction.</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif;color:black'>It
+    provides mechanisms for reproducibility, data processing and tidying raw
+    data into into documented, versioned, and packaged analysis-ready data sets.<br>
+    <a href="https://github.com/ropensci/DataPackageR">https://github.com/ropensci/DataPackageR</a></span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+    style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></b></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
